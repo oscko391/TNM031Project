@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="signup">
+<h1>Signup</h1>
+    <div class = "form">
+        <form id="signup-form">
+            Username:<br>
+            <input type="text" name="username" id="signup-usr"><br>
+            Password:<br>
+            <input type = "password" name = "psw" id="signup-psw"><br>
+        </form>
+        <button onclick="signup()" value="Submit">Signup</button>
+    </div>
+</div>
+<div id="login">
+    <h1>Login</h1>
+    <div class = "form">
+        <form id="login-form">
+            Username:<br>
+            <input type="text" name="username" id="login-usr"><br>
+            Password:<br>
+            <input type = "password" name = "psw" id="login-psw"><br>
+        </form>
+        <button onclick="login()" value="Submit">Login</button>
+    </div>
+</div>
+<script src="/socket.io/socket.io.js" ></script>
+<script src="./main.js"></script>
+</body>
+</html>
